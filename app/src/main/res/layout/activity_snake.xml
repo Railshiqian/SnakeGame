@@ -5,9 +5,112 @@
     android:layout_height="match_parent"
     tools:context=".activity.SnakeActivity">
 
-    <widget.SnakeView
+    <widget.SnakeBodyView
+        android:id="@+id/snake"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/main_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="LLL" />
+
+        <Button
+            android:id="@+id/main_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="RRR" />
+
+        <Button
+            android:id="@+id/main_btn_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="TTT" />
+
+        <Button
+            android:id="@+id/main_btn_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="BBB" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/main_btn_speedup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="加速" />
+
+        <Button
+            android:id="@+id/main_btn_speeddown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="减速" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/main_btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="开始" />
+
+        <Button
+            android:id="@+id/main_btn_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="暂停" />
+
+        <TextView
+            android:id="@+id/main_tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="1分"/>
+
+        <Button
+            android:id="@+id/main_btn_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="重玩" />
+
+    </LinearLayout>
+
+
 
 
 </RelativeLayout>
